@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+</head>
+<body>
+
+<h1>welcome to another day  of js</h1> 
+<button id="start">start</button>
+<button id="stop">stop</button>
+</body>
+<script>
+
+    //work while press the start button it should be stop and whilepress stop it should be stop
+
+  const aim=function(){
+    console.log("started")  
+   }
+   const start=setInterval(aim,1000)
+
+   document.querySelector('#start').addEventListener('click',function(){
+console.log(start)
+   })
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(start)
+   })
+
+   
+
+
+
+
+</script>
+</html>

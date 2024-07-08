@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time out</title>
+</head>
+<body>
+    <h1> basics</h1>
+    <button id="stop">submit</button>
+</body>
+<script>
+   const time= setInterval(function(){
+        console.log("shashank")
+    },2000)
+//clearTimeout(time)
+document.querySelector("#stop").addEventListener('click',function(e){
+    clearTimeout(time)
+    alert("stoped")
+
+})
+</script>
+</html>
